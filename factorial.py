@@ -1,4 +1,4 @@
-x=input(' ')
+x=input('')
 x=int(x)
 if(x<=20):
     fact=1
