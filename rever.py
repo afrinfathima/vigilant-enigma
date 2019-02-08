@@ -1,3 +1,3 @@
-a=str(input(""))
+afi=str(input(""))
 print("")
-print(a[: :-1])
+print(afi[: :-1])
