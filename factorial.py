@@ -1,10 +1,10 @@
-x=input('')
-x=int(x)
-if(x<=20):
+x1=input('')
+x1=int(x1)
+if(x1<=20):
     fact=1
-    while(x>0):
-        fact=fact*x
-        x=x-1
+    while(x1>0):
+        fact=fact*x1
+        x1=x1-1
     print(fact)
 else:
     print("INVALID")
