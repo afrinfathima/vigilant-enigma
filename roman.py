@@ -1,36 +1,36 @@
-def value(r): 
-	if (r == 'I'): 
+def value(a): 
+	if (all == 'I'): 
 		return 1
-	if (r == 'V'): 
+	if (a == 'V'): 
 		return 5
-	if (r == 'X'): 
+	if (a == 'X'): 
 		return 10
-	if (r == 'L'): 
+	if (a == 'L'): 
 		return 50
-	if (r == 'C'): 
+	if (a == 'C'): 
 		return 100
-	if (r == 'D'): 
+	if (a == 'D'): 
 		return 500
-	if (r == 'M'): 
+	if (a == 'M'): 
 		return 1000
 	return -1
 
 def romanToDecimal(str): 
-	res = 0
+	rese = 0
 	i = 0
 	while (i < len(str)): 
-		s1 = value(str[i]) 
+		p1 = value(str[i]) 
 		if (i+1 < len(str)): 
-			s2 = value(str[i+1]) 
-			if (s1 >= s2): 
-				res = res + s1 
+			p2 = value(str[i+1]) 
+			if (p1 >= p2): 
+				rese = rese + p1 
 				i = i + 1
 			else: 
-				res = res + s2 - s1 
+				rese = rese + p2 - p1 
 				i = i + 2
 		else: 
-			res = res + s1 
+			rese = rese + p1 
 			i = i + 1
-	return res 
-J = input()
-print(romanToDecimal(J)) 
+	return rese
+J1 = input()
+print(romanToDecimal(J1)) 
